@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="2dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="3dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/titulo_admin_gen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Docente"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/aux_img_admin_gen"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/aux_admin_gen"/>
+
+        <TextView
+            android:id="@+id/aux_admin_gen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="correo electronico"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/titulo_admin_gen"
+            app:layout_constraintStart_toStartOf="@id/titulo_admin_gen"
+            app:layout_constraintTop_toBottomOf="@id/titulo_admin_gen"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="2dp"
+            android:visibility="gone"/>
+
+
+        <ImageView
+            android:id="@+id/aux_img_admin_gen"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:background="@drawable/fondo_aux"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/titulo_admin_gen"
+            app:layout_constraintEnd_toStartOf="@id/edit_admin_gen"
+            android:visibility="gone"/>
+
+
+        <ImageView
+            android:id="@+id/edit_admin_gen"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:background="@drawable/fondo_edit"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/aux_img_admin_gen"
+            app:layout_constraintEnd_toStartOf="@id/elim_admin_gen"/>
+
+
+        <ImageView
+            android:id="@+id/elim_admin_gen"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:background="@drawable/fondo_elim"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/edit_admin_gen"/>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

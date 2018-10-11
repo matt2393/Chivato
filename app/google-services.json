@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "997452163354",
+    "firebase_url": "https://industrial-fni.firebaseio.com",
+    "project_id": "industrial-fni",
+    "storage_bucket": "industrial-fni.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997452163354:android:b3b4a2f3ab2c18d0",
+        "android_client_info": {
+          "package_name": "com.matt2393.chivato"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997452163354-snfjqpjo6e7925m9c6ap5cq3u6p3sact.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_mYAr510K9ybxy596HVfQu_ItoacRwCA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997452163354:android:a1bc03445d25c5ad",
+        "android_client_info": {
+          "package_name": "com.matt2393.ind"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997452163354-snfjqpjo6e7925m9c6ap5cq3u6p3sact.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_mYAr510K9ybxy596HVfQu_ItoacRwCA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

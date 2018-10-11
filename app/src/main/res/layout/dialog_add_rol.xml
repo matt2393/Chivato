@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/textInputLayout_add_titulo_rol"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent">
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Titulo del Rol de usuario"
+                android:id="@+id/add_titulo_rol"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_white"
+            android:text="Selecione un color"
+            android:id="@+id/add_color_rol"
+            app:layout_constraintTop_toBottomOf="@id/textInputLayout_add_titulo_rol"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/admin_add_rol"
+            android:shadowColor="#000"
+            android:shadowRadius="1"
+            android:shadowDy="1"
+            android:shadowDx="1"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/add_color_rol"
+            app:layout_constraintBottom_toTopOf="@id/reycler_add_rol"
+            android:text="Administrador"
+            android:id="@+id/admin_add_rol"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reycler_add_rol"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@id/admin_add_rol"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/guardar_add_rol">
+
+        </android.support.v7.widget.RecyclerView>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:id="@+id/guardar_add_rol"
+            android:background="@drawable/text_curvo"
+            android:textColor="@color/color_white"
+            android:textAllCaps="false"
+            app:layout_constraintRight_toRightOf="@id/reycler_add_rol"
+            app:layout_constraintLeft_toLeftOf="@id/reycler_add_rol"
+            app:layout_constraintTop_toBottomOf="@id/reycler_add_rol"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="Guardar"/>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

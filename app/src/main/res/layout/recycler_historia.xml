@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_historia"
+        android:src="@drawable/logo_industrial"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="#bf000000"
+        android:textColor="#fff"
+        android:text="X"
+        android:gravity="center"
+        android:id="@+id/elim_img_historia"
+        android:layout_gravity="end"/>
+</android.support.design.widget.CoordinatorLayout>

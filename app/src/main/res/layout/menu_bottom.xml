@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="15dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/menu_bottom_1"
+        android:textAlignment="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="5dp"
+        android:background="@drawable/ripple_menu"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/menu_bottom_2" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="5dp"
+        android:background="@drawable/ripple_menu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_bottom_1"
+        app:layout_constraintEnd_toStartOf="@id/menu_bottom_3"
+        android:id="@+id/menu_bottom_2"
+        android:gravity="center" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="5dp"
+        android:background="@drawable/ripple_menu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/menu_bottom_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/menu_bottom_3"
+        android:gravity="center"/>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
